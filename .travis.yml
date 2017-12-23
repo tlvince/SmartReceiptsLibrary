@@ -9,4 +9,5 @@ android:
 notifications:
   email: false
 before_script:
-  - ./gradlew clean wrapper
+  - sed s/__sample// app/src/main/res/values/secrets_sample.xml > app/src/main/res/values/secrets.xml
+  - echo '{}' | tee -a app/src/free/google-services.json app/src/plusFlavor/google-services.json
