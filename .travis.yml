@@ -9,4 +9,4 @@ android:
 notifications:
   email: false
 before_script:
-  - gradle wrapper --gradle-version 3.0.1
+  - gradle wrapper --gradle-version 4.1
