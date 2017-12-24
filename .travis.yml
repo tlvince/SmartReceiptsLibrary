@@ -10,4 +10,4 @@ notifications:
   email: false
 before_script:
   - sed s/__sample// app/src/main/res/values/secrets_sample.xml > app/src/main/res/values/secrets.xml
-  - echo '{}' | tee -a app/src/free/google-services.json app/src/plusFlavor/google-services.json
+  - echo '{}' | tee -a app/src/free/google-services.json app/src/plusflavor/google-services.json
