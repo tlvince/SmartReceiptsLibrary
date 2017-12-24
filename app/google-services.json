@@ -1,0 +1,21 @@
+{
+  "project_info": {
+    "project_number": ""
+  },
+  "client": [
+    {
+      "client_info": {
+        "android_client_info": {
+          "package_name": "wb.receiptspro"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ]
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}
