@@ -21,10 +21,6 @@ android {
     flavorDimensions "versionType"
 
     productFlavors {
-        free {
-            applicationId "wb.receipts"
-            dimension "versionType"
-        }
         plusFlavor {
             applicationId "wb.receiptspro"
             dimension "versionType"
@@ -124,11 +120,6 @@ android {
         debugImplementation "com.squareup.leakcanary:leakcanary-android:$LEAK_CANARY_VERSION"
         releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$LEAK_CANARY_VERSION"
         testImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$LEAK_CANARY_VERSION"
-
-        // Special dependencies for free flavor
-        freeImplementation "com.google.android.gms:play-services-ads:$FIREBASE_AND_GOOGLE_PLAY_SERVICES_VERSION"
-        freeImplementation "com.google.android.gms:play-services-analytics:$FIREBASE_AND_GOOGLE_PLAY_SERVICES_VERSION"
-        freeImplementation files('src/free/libs/bugsense-3.6.jar')
     }
 
     apply plugin: 'com.google.gms.google-services'
